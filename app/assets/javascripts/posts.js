@@ -8,4 +8,6 @@ $(function() {
     e.preventDefault();
     $('body').animate({scrollTop:0});
   });
+
+  Obtvse.renderGists('.gist-files');
 });

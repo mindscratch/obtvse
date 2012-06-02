@@ -22,6 +22,9 @@ module ApplicationHelper
                   :superscripts => true
                 )
 
+    text = text.lines.map do |line| 
+      process_line line
+    end.join
     redcarpet.render(text)
   end
 
@@ -32,6 +35,17 @@ module ApplicationHelper
       match ? render(:partial => 'youtube', :locals => { :video => match[1] }) : line
     end
     output.join
+  end
+
+  def process_line(line)
+    match = match_gist line
+    return "<div id=\"#{match[1]}\" class=\"gist-files\">Loading gist...</div>" if match
+
+    line
+  end
+
+  def match_gist(line)
+    line.match(/\{\{gist\s+(.*)\}\}/)
   end
 end
 

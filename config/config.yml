@@ -1,12 +1,12 @@
 # Your information
-name:    Nate Wienert
-tagline:
-twitter: natebirdman
-github:  natew
-email:   natewienert@gmail.com
+name:    Craig Wickesser
+tagline: 
+twitter: mind_scratch
+github:  mindscratch
+email:   craig@mindscratch.org
 
 # Google Analytics
-ga_id:   UA-23975642-4
+ga_id:  UA-19519852-1 
 
 # Admin credentials
 login:    <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
@@ -20,3 +20,4 @@ bucket:            bucket_name
 
 #0HJCHEM8VR464K2Y86G2
 #oRQkWSrw8XhY2slQft9GHFVEzmwVu480hm2EvVF/
+
