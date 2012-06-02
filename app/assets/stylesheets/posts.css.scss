@@ -6,7 +6,9 @@ $body-bg: #fff;
 $body-inner-shadow: #eee;
 $text-color: #222;
 $a-color: #000;
-$theme: #b92c2c;
+/* $theme: #b92c2c; */
+/* $theme: #b92c2c; */
+$theme: #f0534c;
 $selection-color: #fff;
 
 
@@ -740,3 +742,11 @@ nav.pagination a {
 .hide {visibility:hidden; height:1px; clip:rect(0 0 0 0); position:absolute;}
 aside {position:relative; display:block;}
 input, textarea {outline:none; background:none;}
+
+
+/* custom */
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
