@@ -24,6 +24,7 @@ group :development, :test do
   gem 'capistrano'
   gem 'quiet_assets'
   gem 'foreman'
+  gem 'seed_dump'
 end
 
 group :assets do
