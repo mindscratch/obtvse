@@ -3,6 +3,7 @@ Obtvse::Application.routes.draw do
   match '/get/:id', :to => 'posts#get'
   match '/new', :to => 'posts#new'
   delete '/:id', :to => 'posts#destroy'
+  post '/posts', :to => 'posts#create'
   post '/edit/:id', :to => 'posts#update'
   put '/edit/:id', :to => 'posts#update'
   get '/edit/:id', :to => 'posts#new', :as => 'post'
